@@ -31,7 +31,7 @@ function checkdata(){
     
     
     if ((emailvalue === loginEmail || emailvalue === loginUsername) && passwordlvalue === loginPassword) {
-        window.location.href = "index.html"
+        window.location.href = "indexlogin.html"
         console.log("เข้าสู่ระบบสำเร็จ")
     } else {
         email_box.style.border = "1px solid red";

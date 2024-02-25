@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้าวมันไก่</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/logo2.png?raw=true" alt="Brand" id="logo" onclick="openwindow('indexlogin.html')">
+        <div class="search-group">
+            <input type="text">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="main-button">
+            <button id="filters" onclick="showfilters()">
+                <i class="fa-solid fa-filter">
+                    <div class="filters-box">
+                        <span>อาหารแต่ละภาค</span>
+                        <div class="filters-child">
+                            <div id="mid">กลาง</div>
+                            <div id="isan">อีสาน</div>
+                            <div id="north">เหนือ</div>
+                            <div id="south">ใต้</div>
+                        </div>
+                        <span>ช่วงเวลา</span>
+                        <div class="filters-child">
+                            <div id="morning">อาหารเช้า</div>
+                            <div id="afternoon">อาหารกลางวัน</div>
+                            <div id="dinner">อาหารเย็น</div>
+                        </div>
+                        <span>ประเภทอาหาร</span>
+                        <div class="filters-child">
+                            <div id="gang">แกง</div>
+                            <div id="pad">ผัด</div>
+                            <div id="tom">ต้ม</div>
+                            <div id="toon">ตุ๋น</div>
+                            <div id="neung">นึ่ง</div>
+                            <div id="tod">ทอด</div>
+                            <div id="yum">ยำ</div>
+                        </div>
+                    </div>
+                </i>
+            </button>
+            <button id="user">
+                <i class="fa-solid fa-user"></i>
+                <div id="control-box">
+                    <ul>
+                        <li id="setting" onclick="openwindow('setting.html')">setting<i class="fa-solid fa-gear" style="font-size: 15px;"></i></li>
+                        <li id="logout" onclick="openwindow('index.html')">logout<i class="fa-solid fa-arrow-right-from-bracket" style="font-size: 15px;"></i></li>
+                    </ul>
+                </div>
+            </button>  
+        </div>
+    </header>
+    <!-- header END -->
+
+    <!-- content -->
+    <div class="content-box">
+        <span style="margin-top: 20px; font-size: 20px;">“ข้าวมันไก่” พร้อมสูตรน้ำจิ้มรสเด็ด ทำกินได้ง่ายๆ!!!</span>
+        <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/menu1home.jpg?raw=true" alt="ข้าวมันไก่">
+        <div class="empty">
+            <div class="left"></div>
+            <div class="right">
+                <i class="fa-regular fa-heart" style="font-size: 25px;">
+                    <span>เพิ่มรายการโปรด</span>
+                </i>
+                <span style="font-size: 20px;">0</span>
+            </div>
+            
+        </div>
+        <span style="margin-top: 20px; font-size: 15px; padding-left: 150px;padding-right: 150px;">“ข้าวมันไก่” อาหารจานเดียวเร่งด่วนกินง่ายกินเมื่อไหร่ทั้งอิ่มทั้งฟิน เมนูจานโปรดของใครหลาย ๆ คน <br>ที่จริงทำไม่ยากเลย แต่ต้องมีเคล็ดลับในการทำเล็กน้อยก็จะได้รสชาติที่ออกมาเหมือนไปนั่งกินที่ร้าน <br>ถ้าพร้อมแล้วตามมาดูสูตรและวิธีทำข้าวมันไก่กันเลย!!!</span>
+        <div id="ul-box">
+            <ul style="font-size: 25px; margin-top: 20px;">วัตถุดิบข้าวมันไก่
+                <li style="font-size: 20px; margin-top: 10px;">น่องไก่/สะโพกไก่/อกไก่ (ตามชอบ)</li>
+                <li style="font-size: 20px; margin-top: 10px;">กระเทียม 3 - 4 หัว</li>
+                <li style="font-size: 20px; margin-top: 10px;">รากผักชี 6 ราก</li>
+                <li style="font-size: 20px; margin-top: 10px;">ขิงแก่หั่นเป็นแผ่นบาง 6 แผ่น</li>
+                <li style="font-size: 20px; margin-top: 10px;">พริกไทย 30 เม็ด</li>
+                <li style="font-size: 20px; margin-top: 10px;">เกลือ 1 กับ ½ ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">น้ำตาลกรวด ½ ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">ข้าวสารดิบ 2 ถ้วยตวง</li>
+                <li style="font-size: 20px; margin-top: 10px;">ซีอิ๊วขาว 3 ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">น้ำมันพืช ½ ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">แตงกวา</li>
+            </ul>
+        </div>
+        <div id="ul-box">
+            <ul style="font-size: 25px; margin-top: 20px;">วัตถุดิบน้ำจิ้มข้าวมันไก่
+                <li style="font-size: 20px; margin-top: 10px;">เต้าเจี้ยว 6 ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">ขิงแก่สับ 3 ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">ซีอิ๊วหวาน 1 ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">มะนาว 1 ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">น้ำตาลทราย 1 ช้อนโต๊ะ</li>
+                <li style="font-size: 20px; margin-top: 10px;">น้ำต้มสุก 1 ช้อนโต๊ะ</li>
+            </ul>
+        </div>
+        <div id="ul-box">
+            <ul style="font-size: 25px; margin-top: 20px;">วัตถุดิบน้ำซุปฟัก
+                <li style="font-size: 20px; margin-top: 10px;">ฟักหั่น ½ หัว</li>
+                <li style="font-size: 20px; margin-top: 10px;">น้ำต้มไก่ 500 มิลลิลิตร</li>
+                <li style="font-size: 20px; margin-top: 10px;">ซีอิ๊วขาว 1 ช้อนโต๊ะ</li>
+            </ul>
+        </div>
+        <div id="ul-box">
+            <ul style="font-size: 25px; margin-top: 20px;">วิธีทำข้าวมันไก่
+                <li style="font-size: 20px; margin-top: 10px;">STEP 1 ต้มไก่ + น้ำซุปฟัก
+                    <p style="padding-top: 10px;">- ต้มน้ำซุปต้มไก่ โดยใส่ รากผักชี กระเทียม พริกไทย ขิง น้ำตาลกรวด ซีอิ๊วขาว เกลือ เคี่ยวประมาณ 15 นาที นำไก่ลงไปต้มต่อจนไก่สุก ใช้เวลาประมาณ 30 นาที</p>
+                    <p style="padding-top: 10px;">- นำไก่ที่สุกแล้วไปน็อกในน้ำผสมน้ำแข็ง จนไก่เย็น ใช้เวลาประมาณ 5 – 10 นาที แล้วนำไก่ขึ้นพักให้สะเด็ดน้ำ ทาด้วยน้ำมันพืชบาง ๆ ให้ทั่วชิ้นไก่ พักไว้</p>
+                    <p style="padding-top: 10px;">- น้ำซุปที่ต้มไก่ให้ช้อนมันออกจากน้ำซุป เอาออกจนน้ำซุปใส ใส่ฟักที่หั่นแล้วลงไปต้ม ปรุงรสด้วยซีอิ๊ว และเกลือ ต้มจนฟักสุก</p>
+                    <p style="padding-top: 10px;">TIPS : การต้มไก่ควรใช้ไฟค่อนข้างอ่อน ต้มไปเรื่อย ๆ จะได้น้ำซุปใสเนื้อไก่สวยชวนกินเลยค่า</p>
+                </li>
+                <li style="font-size: 20px; margin-top: 10px;">STEP 2 ทำข้าวมันไก่
+                    <p style="padding-top: 10px;">- หุงข้าวมันไก่ โดยเจียวกระเทียมกับขิงแก่บุบจนหอม ใส่ข้าวสารดิบลงไป ผัดพอเข้ากัน ปรุงรสด้วยเกลือ น้ำมันไก่ที่ช้อนไว้ ผัดอีกรอบแล้วเทใส่หม้อหุงข้าว ใส่น้ำซุปต้มไก่ลงไป หุงจนข้าวสุก</p>
+                </li>
+                <li style="font-size: 20px; margin-top: 10px;">STEP 2 ทำน้ำจิ้มข้าวมันไก่
+                    <p style="padding-top: 10px;">- ทำน้ำจิ้มโดยใส่ขิงซอย พริกขี้หนูหั่น เต้าเจี้ยว ซีอิ๊วดำหวาน มะนาว น้ำตาลทราย น้ำต้มสุก คนให้เข้ากัน กินคู่ข้าวมันไก่</p>
+                </li>   
+            </ul>
+        </div>
+        <iframe src="https://www.youtube.com/embed/7M9PLNgzuYI?si=0qnlZfwLv8_jRQB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <!-- content END -->
+    <!-- footer -->
+    <footer>
+        <div class="left_footer">
+            <div id="location_box" onclick="openwindow('https://maps.app.goo.gl/3cPiz3temsYjUGEb7')">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <span>19 ตำบลแม่กา <br>อำเภอเมืองพะเยา พะเยา 56000</span>
+            </div>
+            <div id="tel_box" onclick="openwindow('https://www.up.ac.th/')">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <span>054 466 666</span>
+            </div>
+            <div id="email_box" onclick="openwindow('https://www.up.ac.th/')">
+                <div><i class="fa-regular fa-envelope"></i></div>
+                <span>support@up.ac.th</span>
+            </div>
+        </div>
+        <div class="Rigth_footer">
+            <div>
+                <h3>About the company</h3>
+                <p>เว็ปไซต์ที่แนะนำเมนูอาหารที่หลากหลายมากมายก่ายกอง<br>มากขนาดนี้มีที่ไหนอีกครับ</p>
+                <hr>
+                <div class="contact">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-x-twitter"></i></div>
+                    <div><i class="fa-brands fa-line"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+    <script src="menu.js"></script>
+</body>
+</html>
