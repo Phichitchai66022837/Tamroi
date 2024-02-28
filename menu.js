@@ -54,6 +54,7 @@ function showfilters() {
     let submit_button = document.getElementById('submit');
     let submit = document.getElementById('submit');
     let storedUserData = localStorage.getItem('data');
+    
     let data = JSON.parse(storedUserData);
     comment_box.addEventListener('focus',function(){
         username_text.style.display = "block";
@@ -90,11 +91,11 @@ function showfilters() {
         var newComment = document.createElement('div');
         newComment.setAttribute('class', 'comment-user');
     
-
+        let storedUserImage = localStorage.getItem('imageData');
         var accDiv = document.createElement('div');
         accDiv.setAttribute('class', 'acc2');
         var accIcon = document.createElement('img');
-        accIcon.setAttribute('src', 'path/to/your-image.jpg');
+        accIcon.setAttribute('src', storedUserImage);
         accIcon.setAttribute('class', 'pofile');
         accDiv.appendChild(accIcon);
     
@@ -132,3 +133,10 @@ function showfilters() {
     
 }
 
+{
+    function getimage(){
+        let storedUserImage = localStorage.getItem('imageData');
+        let profile = document.getElementById('pofile');
+        profile.setAttribute('src',storedUserImage)
+    }
+}
