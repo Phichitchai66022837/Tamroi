@@ -116,21 +116,17 @@ function openwindow(Link){
     })
     search.addEventListener('input', function() {
         const keyword = this.value.trim().toLowerCase();
-        
-        
+    
         const allContent = Array.from(content).concat(Array.from(content2));
     
         for (let i = 0; i < allContent.length; i++) {
             const contentKeywords = allContent[i].dataset.keyword.toLowerCase();
     
             if (contentKeywords.includes(keyword)) {
-                allContent[i].style.display = "block";
+                allContent[i].style.display = "block";                
             } else {
                 allContent[i].style.display = "none";
             }
         }
     });
-    
-    
-    
 }

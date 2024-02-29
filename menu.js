@@ -140,3 +140,19 @@ function showfilters() {
         profile.setAttribute('src',storedUserImage)
     }
 }
+{
+    let lisa_comment = document.getElementsByClassName('usercomment');
+    lisa_comment[0].innerText = "เมนูน่าสนใจมากค่ะ"
+}
+
+{
+    let allcomment = 1
+    let comment_number = document.getElementById('comment_number');
+    let submit = document.getElementById('submit');
+
+    submit.addEventListener('click',function(){
+        allcomment = allcomment+1
+        comment_number.innerText = allcomment
+    })
+
+}
