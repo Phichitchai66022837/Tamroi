@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูภาคกลาง</title>
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://github.com/SutthiwitSriyotha/tamroi/blob/main/homepage/page/logo2.png?raw=true" alt="Brand" id="logo" onclick="openwindow('index.html')">
+        <div class="search-group">
+            <input type="text">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="main-button">
+            <button id="filters" onclick="showfilters()">
+                <i class="fa-solid fa-filter">
+                    <div class="filters-box">
+                        <span>อาหารแต่ละภาค</span>
+                        <div class="filters-child">
+                            <div id="mid">กลาง</div>
+                            <div id="isan">อีสาน</div>
+                            <div id="north">เหนือ</div>
+                            <div id="south">ใต้</div>
+                        </div>
+                        <span>ช่วงเวลา</span>
+                        <div class="filters-child">
+                            <div id="morning">อาหารเช้า</div>
+                            <div id="afternoon">อาหารกลางวัน</div>
+                            <div id="dinner">อาหารเย็น</div>
+                        </div>
+                        <span>ประเภทอาหาร</span>
+                        <div class="filters-child">
+                            <div id="gang">แกง</div>
+                            <div id="pad">ผัด</div>
+                            <div id="tom">ต้ม</div>
+                            <div id="toon">ตุ๋น</div>
+                            <div id="neung">นึ่ง</div>
+                            <div id="tod">ทอด</div>
+                            <div id="yum">ยำ</div>
+                        </div>
+                    </div>
+                </i>
+            </button>
+            <button id="user" onclick="openwindow('Login.html')">
+                <i class="fa-solid fa-user">
+                    <span>LOGIN</span>
+                </i>
+            </button>  
+        </div>
+    </header>
+    <div class="head_text">
+        <hr style="width: 100lvw;">
+        <h2>อาหารภาคกลาง</h2>
+    </div>
+</body>
+</html>
