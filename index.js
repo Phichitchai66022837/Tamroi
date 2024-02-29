@@ -104,4 +104,33 @@ function openwindow(Link){
     })
 }
 
-
+{
+    let content = document.getElementsByClassName('content');
+    let content2 = document.getElementsByClassName('content2');
+    let search = document.getElementById('search');
+    let search_submit = document.getElementById('search_submit');
+    search_submit.addEventListener('click',function(){
+        if(search.value == "ข้าวมันไก่"){
+            window.open('kawmunkai.html', '_self');
+        }
+    })
+    search.addEventListener('input', function() {
+        const keyword = this.value.trim().toLowerCase();
+        
+        
+        const allContent = Array.from(content).concat(Array.from(content2));
+    
+        for (let i = 0; i < allContent.length; i++) {
+            const contentKeywords = allContent[i].dataset.keyword.toLowerCase();
+    
+            if (contentKeywords.includes(keyword)) {
+                allContent[i].style.display = "block";
+            } else {
+                allContent[i].style.display = "none";
+            }
+        }
+    });
+    
+    
+    
+}
